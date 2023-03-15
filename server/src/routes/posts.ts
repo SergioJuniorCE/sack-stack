@@ -3,7 +3,7 @@ import { prisma } from '../prisma';
 
 const router = express.Router();
 
-router.get('/get-all-posts', async (req, res) => {
+router.get('/', async (req, res) => {
   const posts = await prisma.post.findMany();
   res.status(200).send(posts);
 });

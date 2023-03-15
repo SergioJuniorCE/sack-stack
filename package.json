@@ -1,0 +1,19 @@
+{
+  "name": "sack-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SergioJuniorCE/sack-stack.git",
+  "author": "Sergio Junior Castro Egurrolar <sergiojuniorce@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

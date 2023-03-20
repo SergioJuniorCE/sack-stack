@@ -11,7 +11,8 @@
     "server"
   ],
   "scripts": {
-    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client start\" \"yarn workspace server studio\""
+    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client dev\" \"yarn workspace server studio\"",
+    "prisma-format": "yarn workspace server format"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
